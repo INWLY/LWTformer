@@ -144,7 +144,7 @@ If you find our work helpful for your research, please consider citing:
 ```bibtex
 @misc{LWTformer2025,
   title  = {LWTformer: A Detail-Aware, Learnable Wavelet-Transformer for Ancient Chinese Character Image Restoration},
-  author = {Author One and Author Two and Author Three},
+  author = {Wentao Ruan and Xinhui Li and Zhan Cheng and Cunhang Fan and Libao Tian and Zhao Lv},
   year   = {2025},
   howpublished = {\url{https://github.com/INWLY/LWTformer}},
   note   = {GitHub repository}
@@ -156,5 +156,6 @@ For any questions, please contact:
 
 ## Copyright
 - This repository can only be used for non-commercial research purposes.
-- For commercial use, please contact Prof. Zhao Lv (`12080@ahu.edu.cn`).
+- For commercial use, please get in touch with Prof. Zhao Lv (`12080@ahu.edu.cn`).
 - Copyright 2025, [Anhui University Laboratory of Intelligent Information and Human-Computer Interaction (IIP-HCI)](http://iiphci.ahu.edu.cn/), Anhui University. 
+
