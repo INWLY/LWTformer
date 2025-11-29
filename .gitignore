@@ -1,0 +1,28 @@
+# python / environment
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+LWTformer_env/
+venv/
+.env
+
+# PyTorch
+*.pth
+*.tar
+*.pt
+
+# Datasets (根据你的 README 路径)
+Oracle/
+WSC41K/
+datasets/
+data/
+
+# Logs and Results
+logs/
+results/
+tb_logger/
+
+# System
+.DS_Store
+Thumbs.db
