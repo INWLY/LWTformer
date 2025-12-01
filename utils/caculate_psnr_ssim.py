@@ -56,7 +56,7 @@ def _ssim(img1, img2):
 
 def calculate_ssim(img1, img2, crop_border=0, input_order='HWC', test_y_channel=False):
     assert img1.shape == img2.shape, (f'Image shapes are differnet: {img1.shape}, {img2.shape}.')
-    # 检查是否为 torch.Tensor 类型，如果是则转换为 numpy.ndarray
+
     if isinstance(img1, torch.Tensor):
         img1 = img1.cpu().numpy()
     if isinstance(img2, torch.Tensor):
