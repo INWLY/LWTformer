@@ -30,7 +30,7 @@ class Augment_RGB_torch:
         return torch_tensor
 
 
-### mix two images  通过对输入的图像数据进行随机混合，增加了训练数据的多样性，有助于提高模型的泛化能力。
+### mix two images 
 class MixUp_AUG:
     def __init__(self):
         self.dist = torch.distributions.beta.Beta(torch.tensor([1.2]), torch.tensor([1.2]))
