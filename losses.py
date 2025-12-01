@@ -56,13 +56,13 @@ class CharbonnierLoss(nn.Module):
     def forward(self, x, y):
         diff = x - y
         # loss = torch.sum(torch.sqrt(diff * diff + self.eps))
-        loss = torch.mean(torch.sqrt((diff * diff) + (self.eps * self.eps)))  # torch.mean(...)：对所有元素的损失求均值
+        loss = torch.mean(torch.sqrt((diff * diff) + (self.eps * self.eps)))  
         return loss
 
 
 class CharFreqLoss(nn.Module):
     """L1 (mean absolute error, MAE) loss of fft.
-        `结合频域损失和像素级的CharbonnierLoss`
+    
     Args:
         loss_weight (float): Loss weight for L1 loss. Default: 1.0.
         reduction (str): Specifies the reduction to apply to the output.
@@ -81,7 +81,7 @@ class CharFreqLoss(nn.Module):
         self.l1_loss = CharbonnierLoss()
 
     def forward(self, pred, target):
-        diff = torch.fft.rfft2(pred) - torch.fft.rfft2(target)  # 频域上的损失是通过对预测值和目标值进行二维实值快速傅里叶变换后计算得到的
+        diff = torch.fft.rfft2(pred) - torch.fft.rfft2(target)
         loss = torch.mean(torch.abs(diff))
         # print(loss)
         return self.loss_weight * loss * 0.01 + self.l1_loss(pred, target)
@@ -89,7 +89,6 @@ class CharFreqLoss(nn.Module):
 
 class CharFreqPerceptualLoss(nn.Module):
     """L1 (mean absolute error, MAE) loss of fft.
-        `结合频域损失和像素级的CharbonnierLoss和感知损失PerceptualLoss`
     Args:
         loss_weight (float): Loss weight for L1 loss. Default: 1.0.
         reduction (str): Specifies the reduction to apply to the output.
@@ -110,7 +109,7 @@ class CharFreqPerceptualLoss(nn.Module):
         self.perceptual_loss = PerceptualLoss(layer_weights={'conv5_4': 1.0}, perceptual_weight=1.0)
 
     def forward(self, pred, target):
-        diff = torch.fft.rfft2(pred) - torch.fft.rfft2(target)  # 频域上的损失是通过对预测值和目标值进行二维实值快速傅里叶变换后计算得到的
+        diff = torch.fft.rfft2(pred) - torch.fft.rfft2(target)
         fft_loss = torch.mean(torch.abs(diff))
         perceptual_loss, _ = self.perceptual_loss(pred, target)
 
@@ -118,7 +117,7 @@ class CharFreqPerceptualLoss(nn.Module):
 
 class CharFreqPerceptualLossAblation(nn.Module):
     """L1 (mean absolute error, MAE) loss of fft.
-        `结合频域损失和像素级的CharbonnierLoss和感知损失PerceptualLoss`
+    
     Args:
         loss_weight (float): Loss weight for L1 loss. Default: 1.0.
         reduction (str): Specifies the reduction to apply to the output.
@@ -139,7 +138,7 @@ class CharFreqPerceptualLossAblation(nn.Module):
         self.perceptual_loss = PerceptualLoss(layer_weights={'conv5_4': 1.0}, perceptual_weight=1.0)
 
     def forward(self, pred, target):
-        diff = torch.fft.rfft2(pred) - torch.fft.rfft2(target)  # 频域上的损失是通过对预测值和目标值进行二维实值快速傅里叶变换后计算得到的
+        diff = torch.fft.rfft2(pred) - torch.fft.rfft2(target)
         fft_loss = torch.mean(torch.abs(diff))
         perceptual_loss, _ = self.perceptual_loss(pred, target)
 
@@ -147,7 +146,7 @@ class CharFreqPerceptualLossAblation(nn.Module):
 
 class CharPerceptualLoss(nn.Module):
     """L1 (mean absolute error, MAE) loss of fft.
-        `结合感知损失和像素级的CharbonnierLoss`
+    
     Args:
         loss_weight (float): Loss weight for L1 loss. Default: 1.0.
         reduction (str): Specifies the reduction to apply to the output.
@@ -175,7 +174,7 @@ class CharPerceptualLoss(nn.Module):
 
 class CharFreqPerceptualLossV2(nn.Module):
     """L1 (mean absolute error, MAE) loss of fft.
-        `结合频域损失和像素级的CharbonnierLoss`
+    
     Args:
         loss_weight (float): Loss weight for L1 loss. Default: 1.0.
         reduction (str): Specifies the reduction to apply to the output.
@@ -196,7 +195,7 @@ class CharFreqPerceptualLossV2(nn.Module):
         self.perceptual_loss = PerceptualLoss(layer_weights={'conv5_4': 1.0}, perceptual_weight=1.0)
 
     def forward(self, pred, target):
-        diff = torch.fft.rfft2(pred) - torch.fft.rfft2(target)  # 频域上的损失是通过对预测值和目标值进行二维实值快速傅里叶变换后计算得到的
+        diff = torch.fft.rfft2(pred) - torch.fft.rfft2(target)  
         fft_loss = torch.mean(torch.abs(diff))
         perceptual_loss, _ = self.perceptual_loss(pred, target)
 
