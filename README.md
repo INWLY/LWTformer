@@ -152,11 +152,12 @@ If you find our work helpful for your research, please consider citing:
 ```
 ## 📧 Contact
 For any questions, please contact:
-- Email: [INWLY@qq.com](INWLY@qq.com)(Recommended)  [e24201077@stu.ahu.edu.cn](e24201077@stu.ahu.edu.cn)
+- Email: [INWLY@qq.com](mailto:INWLY@qq.com)(Recommended)  [e24201077@stu.ahu.edu.cn](mailto:e24201077@stu.ahu.edu.cn)
 
 ## Copyright
 - This repository can only be used for non-commercial research purposes.
 - For commercial use, please get in touch with Prof. Zhao Lv (`12080@ahu.edu.cn`).
 - Copyright 2025, [Anhui University Laboratory of Intelligent Information and Human-Computer Interaction (IIP-HCI)](http://iiphci.ahu.edu.cn/), Anhui University. 
+
 
 
