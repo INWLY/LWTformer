@@ -27,6 +27,7 @@
 
 
 ## 📅 News
+- **2026.04.01**: Congratulations! 🎉🎉 Our paper has been accepted to CVPR 2026 Findings! 🎉🎉
 - **2025.11.29**: We have made all our code publicly available.
 - **2025.11.29**: Our paper is _under review_.
 
@@ -153,11 +154,9 @@ If you find our work helpful for your research, please consider citing:
 ## 📧 Contact
 For any questions, please contact:
 - Email: [INWLY@qq.com](mailto:INWLY@qq.com)(Recommended)  [e24201077@stu.ahu.edu.cn](mailto:e24201077@stu.ahu.edu.cn)
+- Email: [xinhuili@ahu.edu.cn](ailto:xinhuili@ahu.edu.cn)
 
 ## Copyright
 - This repository can only be used for non-commercial research purposes.
 - For commercial use, please get in touch with Prof. Zhao Lv (`12080@ahu.edu.cn`).
 - Copyright 2025, [Anhui University Laboratory of Intelligent Information and Human-Computer Interaction (IIP-HCI)](http://iiphci.ahu.edu.cn/), Anhui University. 
-
-
-
