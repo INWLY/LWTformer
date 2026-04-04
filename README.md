@@ -154,7 +154,7 @@ If you find our work helpful for your research, please consider citing:
 ## 📧 Contact
 For any questions, please contact:
 - Email: [INWLY@qq.com](mailto:INWLY@qq.com)(Recommended)  [e24201077@stu.ahu.edu.cn](mailto:e24201077@stu.ahu.edu.cn)
-- Email: [xinhuili@ahu.edu.cn](ailto:xinhuili@ahu.edu.cn)
+- Email: [xinhuili@ahu.edu.cn](mailto:xinhuili@ahu.edu.cn)
 
 ## Copyright
 - This repository can only be used for non-commercial research purposes.
