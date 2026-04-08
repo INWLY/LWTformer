@@ -23,7 +23,7 @@ class Options():
         parser.add_argument('--gpu', type=str, default='0', help='GPUs')
 
         # args for saving
-        parser.add_argument('--save_dir', type=str, default='../logs/', help='save dir')
+        parser.add_argument('--save_dir', type=str, default='logs', help='save dir')
         parser.add_argument('--dataset', type=str, default='',
                             help='dataset name, Oracle, WSC41K_mix_128')
         parser.add_argument('--task', type=str, default='',

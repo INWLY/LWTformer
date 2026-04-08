@@ -6,12 +6,14 @@ from torch.utils.data import DataLoader
 from tqdm import tqdm
 from pytorch_fid.fid_score import calculate_fid_given_paths  # Import pytorch-fid
 
-from utils.metrics import calculate_batch_psnr_ssim, calculate_batch_psnr_ssim_color, calculate_batch_lpips
-
 # Add paths
 dir_name = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(os.path.join(dir_name, '../dataset/'))
-sys.path.append(os.path.join(dir_name, '..'))
+project_root = os.path.abspath(os.path.join(dir_name, '..'))
+dataset_root = os.path.abspath(os.path.join(dir_name, '../dataset'))
+sys.path.append(dataset_root)
+sys.path.append(project_root)
+
+from utils.metrics import calculate_batch_psnr_ssim, calculate_batch_psnr_ssim_color, calculate_batch_lpips
 
 # Import other modules
 from dataset.dataset_denoise import *
@@ -62,7 +64,7 @@ val_loader = DataLoader(dataset=val_dataset, batch_size=args.batch_size, shuffle
 len_valset = val_dataset.__len__()
 
 # Define directories for saving generated and real images
-result_dir = './results'
+result_dir = 'results'
 fake_dir = os.path.join(result_dir, 'fake_images')  # Generated images directory
 os.makedirs(fake_dir, exist_ok=True)
 

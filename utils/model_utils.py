@@ -63,10 +63,10 @@ def get_arch(opt):
     if arch == 'LWTformer':
         model_restoration = models.LWTformer()
 
-    if arch == 'LWTformer-B':
+    elif arch == 'LWTformer-B':
         model_restoration = models.LWTformer(dim=32)
 
-    if arch == 'LWTformer-L':
+    elif arch == 'LWTformer-L':
         model_restoration = models.LWTformer(dim=48)
 
     ### add more arch here
