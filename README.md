@@ -89,8 +89,8 @@ Modify the parameters in `options/train_LWTformer_options.py` to match your setu
 | `--nepoch` | Total number of training epochs | `500` (Oracle), `200` (WSC41K) |
 | `--dataset` | Dataset name (used for logging) | `Oracle` |
 | `--task` | Task name (used for logging) | `Restoration` |
-| `--dim` | Feature dimension size | `32` (LWTformer-S), `48` (LWTformer-L) |
-| `--arch` | Model architecture | `LWTformer-S`, `LWTformer-L` |
+| `--dim` | Feature dimension size | `32` (LWTformer-B), `48` (LWTformer-L) |
+| `--arch` | Model architecture | `LWTformer-B`, `LWTformer-L` |
 | `--train_dir` | Path to training dataset | `./Oracle/train` |
 | `--val_dir` | Path to validation/test dataset | `./Oracle/test` |
 
@@ -143,12 +143,13 @@ We heavily drew on the following works during the development of our codebase. W
 ## 📜 Citation
 If you find our work helpful for your research, please consider citing:
 ```bibtex
-@misc{LWTformer2025,
-  title  = {LWTformer: A Detail-Aware, Learnable Wavelet-Transformer for Ancient Chinese Character Image Restoration},
-  author = {Wentao Ruan and Xinhui Li and Zhan Cheng and Cunhang Fan and Libao Tian and Zhao Lv},
-  year   = {2025},
-  howpublished = {\url{https://github.com/INWLY/LWTformer}},
-  note   = {GitHub repository}
+@InProceedings{Ruan_2026_CVPR,
+    author    = {Ruan, Wentao and Li, Xinhui and Cheng, Zhan and Fan, Cunhang and Tian, Libao and Lv, Zhao},
+    title     = {LWTformer: A Detail-Aware, Learnable Wavelet-Transformer for Ancient Chinese Character Image Restoration},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Findings},
+    month     = {June},
+    year      = {2026},
+    pages     = {4971-4981}
 }
 ```
 ## 📧 Contact
