@@ -1,5 +1,5 @@
 # LWTformer: A Detail-Aware, Learnable Wavelet-Transformer for Ancient  Chinese Character Image Restoration
-
+<!--  -->
 <div align="center">
 
 **The official PyTorch implementation of the paper:**
@@ -137,7 +137,7 @@ We heavily drew on the following works during the development of our codebase. W
 - [MLWNet](https://github.com/thqiu0419/MLWNet)
 - [BasicSR](https://github.com/XPixelGroup/BasicSR)
 - [DiffSkelet](https://github.com/inferioronly/DiffSkelet)
-- [RCRN](https://github.com/daqians/Noisy-character-image-benchmark.)
+- [RCRN](https://github.com/daqians/Noisy-character-image-benchmark)
 - [CharFormer](https://github.com/daqians/CharFormer)
 
 ## 📜 Citation
