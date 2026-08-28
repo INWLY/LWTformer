@@ -130,6 +130,14 @@ We provide visual examples demonstrating the restoration capabilities of LWTform
   <p align="center" style="color: gray;"><b>Figure 3: Generalization test on real-world Hubei Bamboo Slips (using model trained solely on WSC41K).</b></p>
 </div>
 
+## 🚧 Correction Note for Table 1
+
+Due to an Excel cell-formatting issue, several values in the `LWTformer-B (Ours)` and `LWTformer-L (Ours)` rows of Table 1 in the published CVPR Findings version were incorrectly displayed with `0` as the fourth decimal digit. The corrected Table 1 is shown below. This minor correction does not affect the method ranking, highlighted results, comparisons, or conclusions of the paper.
+
+![Corrected Table 1](figures/table1.png)
+
+We have actively contacted the conference organizers regarding this issue and provide the corrected table here for transparency.
+
 ## 💙 Acknowledgement
 We heavily drew on the following works during the development of our codebase. We are grateful for their valuable contributions.
 - [Restormer](https://github.com/swz30/Restormer)
@@ -155,9 +163,9 @@ If you find our work helpful for your research, please consider citing:
 ## 📧 Contact
 For any questions, please contact:
 - Email: [INWLY@qq.com](mailto:INWLY@qq.com)(Recommended)  [e24201077@stu.ahu.edu.cn](mailto:e24201077@stu.ahu.edu.cn)
-- Email: [xinhuili@ahu.edu.cn](mailto:xinhuili@ahu.edu.cn)
 
-## Copyright
+## Copyright and License
 - This repository can only be used for non-commercial research purposes.
-- For commercial use, please get in touch with Prof. Zhao Lv (`12080@ahu.edu.cn`).
+- This repository is intended for academic research purposes only.  
+- Commercial use is prohibited without prior permission.
 - Copyright 2025, [Anhui University Laboratory of Intelligent Information and Human-Computer Interaction (IIP-HCI)](http://iiphci.ahu.edu.cn/), Anhui University. 
